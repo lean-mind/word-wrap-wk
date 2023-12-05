@@ -1,9 +1,18 @@
-﻿# C# Katas
+﻿# Word Wrap Kata in C#
 
-## Description
 
-This is a template repository for C# katas. It contains a basic project structure and a sample test.
+## Problem Description
+You write a class called Wrapper, that has a single static function named wrap that takes two arguments, a string, and a column number. The function returns the string, but with line breaks inserted at just the right places to make sure that no line is longer than the column number. You try to break lines at word boundaries.
 
+Like a word processor, break the line by replacing the last space in a line with a newline.
+
+For example, here is a sample test case (in C#):
+
+```csharp
+Wrapper.wrap("word word", 5).Should().Be("word\nword");
+```
+
+## Technologies used
 This boilerplate include:
 
 - ➕ [.NET 7.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7) as language version
